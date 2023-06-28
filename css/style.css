@@ -1,0 +1,56 @@
+*{
+	margin:0px;
+	padding:0px;
+	Box-sizing:border-box;
+}
+.h {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation-name: example;
+	animation-duration: 4s;
+	animation-delay: 0.9s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate ;
+	position: relative;
+  }
+  
+  @keyframes example {
+	0%   {background-color: red;left:0px; top:0px;}
+	25%  {background-color: yellow;left:200px; top:0px;}
+	50%  {background-color: blue;left:200px; top:200px;}
+	75%  {background-color: aqua;left:0px; top:200px;}
+	100% {background-color: green;left:0px; top:0px;}
+  }
+  .i {
+	
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation-name: exa;
+	animation-duration: 4s;
+	animation-delay: 0.9s;
+	animation-fill-mode: forwards;
+	position: relative;
+  }
+  
+  @keyframes exa {
+	0%   {background-color: red;left:0px; top:0px;}
+	
+	100% {background-color: green;left:100px; top:0px;}
+  }
+  .j {
+	position: relative;
+	margin-top: 100px;
+	width: 100px;
+	height: 100px;
+	animation: ex 5s linear 2s infinite alternate;
+  }
+   
+  @keyframes ex {
+	0%   {background-color: rgb(247, 35, 183);left:0px; top:0px;}
+	25%  {background-color: rgb(45, 243, 177);left:200px; top:0px;}
+	50%  {background-color: rgb(182, 182, 189);left:200px; top:200px;}
+	75%  {background-color: rgb(123, 141, 241);left:0px; top:200px;}
+	100% {background-color: rgb(27, 129, 27);left:0px; top:0px;}
+  }
